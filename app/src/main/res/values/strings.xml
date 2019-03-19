@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Timer</string>
+
+
+    <string name="Start_buttpn">Start</string>
+    <string name="Stop_button">Stop</string>
+    <string name="Reset_button">Reset</string>
+</resources>
+

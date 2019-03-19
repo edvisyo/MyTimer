@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/app_name"
+        android:layout_gravity="center"
+        android:textColor="@color/colorPrimary"
+        android:textSize="40dp"
+        android:layout_marginTop="20dp"
+        android:textStyle="bold" />
+
+    <Chronometer
+        android:id="@+id/myChronometer"
+        android:layout_width="250dp"
+        android:layout_height="170dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:background="@android:drawable/dialog_holo_light_frame"
+        android:textStyle="bold"
+        android:textSize="40dp"
+        android:format="00:00:00"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+
+
+        <Button
+            android:id="@+id/Start"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/Start_buttpn"
+            android:layout_weight="1"
+            android:layout_marginStart="10dp"
+            android:onClick="onStartClick"
+            android:textColor="@color/colorGreen"
+            android:background="@drawable/shape"/>
+
+        <Button
+            android:id="@+id/Stop"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:text="@string/Stop_button"
+            android:layout_marginStart="10dp"
+            android:onClick="onStopClick"
+            android:textColor="@color/colorRed"
+            android:background="@drawable/shape"/>/>
+
+        <Button
+            android:id="@+id/Reset"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:text="@string/Reset_button"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:onClick="onResetClick"
+            android:textColor="@color/colorYellow"
+            android:background="@drawable/shape"/>/>
+
+    </LinearLayout>
+
+</LinearLayout>
